@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.guowe.myapplication.MainActivity">
+
+
+    <fragment
+        android:name="com.example.guowe.myapplication.InfoFragment"
+        android:id="@+id/fragment_place"
+        android:layout_width="match_parent"
+        android:layout_height="279dp"
+        android:layout_weight="1.29"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/button1" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Information"
+        android:onClick="selectFragment"
+        android:layout_above="@+id/button2"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="selectFragment"
+        android:text="Home Page"
+        android:layout_above="@+id/button3"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="selectFragment"
+        android:text="Contant"
+        android:layout_above="@+id/button4"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="selectFragment"
+        android:text="RSS-feed"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
